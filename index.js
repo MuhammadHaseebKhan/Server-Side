@@ -189,16 +189,7 @@ app.post('/api/schoolDelete', function (req, res) {
     SchoolRegister.findByIdAndRemove(_id, function (err, data) {
         if (!err) {
             // console.log("data", data)
-            // res.send(data)
-            SchoolRegister.find(function (err, data) {
-                if (!err) {
-                    console.log("data", data)
-                    res.send(data)
-                } else {
-                    console.log("Err", err)
-                    res.send(err)
-                }
-            });
+            res.send(data)
         } else {
             console.log("Err", err)
             res.send(err)
@@ -223,16 +214,16 @@ app.post('/api/employeeDelete', function (req, res) {
     EmployeeRegister.findByIdAndRemove(_id, function (err, data) {
         if (!err) {
             // console.log("data", data)
-            // res.send(data)
-            EmployeeRegister.find(function (err, data) {
-                if (!err) {
-                    console.log("data", data)
-                    res.send(data)
-                } else {
-                    console.log("Err", err)
-                    res.send(err)
-                }
-            });
+            res.send(data)
+            // EmployeeRegister.find(function (err, data) {
+            //     if (!err) {
+            //         console.log("data", data)
+            //         res.send(data)
+            //     } else {
+            //         console.log("Err", err)
+            //         res.send(err)
+            //     }
+            // });
         } else {
             console.log("Err", err)
             res.send(err)
