@@ -1,15 +1,5 @@
 ## Our Work so far
-Assignment 1: API document,ERD both in Assignment folder and mockup link https://drive.google.com/drive/u/0/folders/0B4jbSXWB1yALUURsTDdfd0c1VGs
-Assignment 2: Signup Login Multiplication Assignment Completed
 
-Signup API: http://localhost:8000/api/signup before hit this api must pass JSON object via postman
-{"name":"name",   "email": "email@gmail.com","password": "password"}
-
-Login API: http://localhost:8000/api/login before hit this api must pass JSON object via postman
-{"email": "email@gmail.com","password": "password"}
-
-Multiplication API: http://localhost:8000/api/multiplication before hit this api must pass JSON object
-{"num1":4,"num2":4}
 
 result show on console
 
